@@ -8,7 +8,7 @@ const GridViewCard = ({ containerStyle, categoryItem, onPress }) => {
   const handlePress = async() => {
     setIsBookmark(!isBookmark);
   
-    await axios.post('http://172.19.112.1/api/', {
+    await axios.post('http://javed-iqbal.com/api/', {
       "bookmark": !isBookmark === false ? "0" : "1",
       "id": categoryItem.id
     })

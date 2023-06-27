@@ -15,7 +15,7 @@ const HomeScreen = ({ navigation }) => {
   };
   useEffect(() => {
 
-    axios.get("http://172.19.112.1/api/?get_videos=all")
+    axios.get("https://javed-iqbal.com/api/?get_videos=all")
       .then(response => {
         
         let data = response.data.map(d=>{
